@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Stylish&display=swap');
+
+.homeContainer {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    font-family: "Stylish", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.introSection, .pictureSection {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.introSection p {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.highlight {
+    color: #ea1538;
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%; /* Ensures it takes the full width for proper alignment */
+}
+
+.pictureSection img {
+    max-width: 70%;
+    max-height: 70%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes letterDrop {
+    from {
+      opacity: 0;
+      transform: translateY(-100vh); /* Start above the viewport */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    animation: letterDrop 0.5s ease forwards;
+}

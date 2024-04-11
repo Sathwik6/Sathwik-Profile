@@ -1,0 +1,64 @@
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Stylish&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Stylish", serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+  
+nav{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.first-name{
+    color:whitesmoke;
+    font-size: 40px;
+}
+
+.last-name{
+    color: #ea1538;
+    font-size: 40px;
+}
+
+.nav-item{
+  list-style-type: none;
+  display: inline-block;  
+  padding: 10px 20px;
+}
+
+.nav-item-tag{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.nav-item-tag:hover{
+    color: #ea1538;
+    transition: 0.3s;
+}
+
+@keyframes letterAppear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.letter {
+    display: inline-block;
+    animation: letterAppear 0.5s ease forwards;
+}
